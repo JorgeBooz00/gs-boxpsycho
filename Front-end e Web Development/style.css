@@ -1,0 +1,352 @@
+@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,500;6..12,600;6..12,800;6..12,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #123CB2, #092677);
+    padding: .8rem;
+}
+img#logo{
+    width: 10rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+ul a{
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    color: #fff;
+}
+ul a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(to right, #76189E, rgb(196, 101, 236));
+    transition: .3s;
+}
+ul a:hover::before{
+    width: 100%;
+}
+
+main{
+    padding: 0rem 8rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+section#disciplinas{
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color:#76189E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    padding: 8rem 0rem;
+
+}
+
+section#problema{
+    display: flex;
+    align-items: center;
+    padding: 4rem 0rem;
+    gap: 10rem;
+}
+div#problema-esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+div#problema-esquerda h1{
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    color: #76189E;
+    font-size: 32px;
+}
+div#problema-esquerda p{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: #1f1f1f;
+}
+div#problema-esquerda a{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #123CB2;
+    text-decoration:underline;
+    cursor: pointer;
+    transition: .3s;
+}
+div#problema-esquerda a:hover{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    color: #76189E;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.fake{
+    display: none;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+div#problema-esquerda img{
+    width: 29rem;
+}
+
+div#problema-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+div#problema-direita h2{
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    color: #123CB2;
+    padding-top: 2rem;
+    font-size: 32px
+}
+div#problema-direita p{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: #1f1f1f;
+}
+div#problema-direita img{
+    width: 80%;
+}
+
+
+section#videos{
+    padding: 4rem 0rem 8rem 4rem;
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 20rem;
+}
+div#arduino{
+    color: #123CB2;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#arduino iframe:hover{
+    box-shadow: 0 5px 12px 10px #2054e480;
+} 
+div#python{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #76189E;
+    align-items: end;
+}
+#python iframe:hover{
+    box-shadow: 0 5px 12px 10px #b02ee781;
+} 
+.video{
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+
+
+section#contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 35rem;
+    box-shadow: 0 5px 12px 10px #1f1f1f1a;
+}
+div#header-form{
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+
+    color: #123CB2;
+    
+    border-bottom: solid 2px #dfdfdf;
+    
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label-title{
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+}
+.form-content{ 
+    padding: 1rem;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+.form-content input{
+    width: 30rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: 2px solid #dfdfdf;
+    font-family: "Nuinito", Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea#mensagem{
+    width: 30rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid #dfdfdf;
+    font-family: "Nuinito", Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-content a{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    display: none;
+}
+form#form button{
+    background-color: #123CB2;;
+    color:#fff;
+    width: 30%;
+    border-radius: 1rem;
+    padding: .8rem;
+    border:0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: .3s;
+}
+form#form button:hover{
+    background-color: #76189E;
+    padding: 1.2rem;
+    width: 35%;
+}
+.form-content.error input{
+     border-color: #ff3b25;
+}
+.form-content.error a{
+    color: #ff3b25;
+    display: inherit;
+}
+
+
+section#autores{
+    padding: 8rem 0rem;
+    display: flex;
+    justify-content: center;
+    width: 100rem;
+}
+.container{
+    color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; 
+}
+.container table{
+    width: 50%;
+}
+#title{
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    color: #76189E;
+    font-size: 20px;
+}
+.container table tr th{
+    font-size: 16px;
+   text-align: left;
+   padding: 0 10px;
+}
+.container table tr.item td{
+    border-bottom: 1px solid #c8cacc;
+    padding: 0 10px;
+}
+.container table tr.item{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+
+}
+.container table tr td {
+    vertical-align: center;
+    letter-spacing: 0.25px;
+}
+.container table tr td .button{
+    background-color: #123CB2;;
+    color:#fff;
+    width: 100%;
+    border-radius: 1rem;
+    padding: .8rem;
+    border:0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: .3s;
+}
+.container table tr td a{
+    text-decoration: none;
+}
+.container table tr td a:visited{
+    color: #fff;
+}
+.container table tr td .button:hover{
+    background-color: #76189E;
+    padding: 1.2rem;
+    width: 110%;
+}
+
+
+footer{
+    background: linear-gradient(to right, #123CB2, #092677);
+    width: 102%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div#images{
+    padding: 2rem 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+div#images img{
+    width: 8rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    font-family: "Bahnschfrit", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+footer a:visited{
+    color: #fff;
+}

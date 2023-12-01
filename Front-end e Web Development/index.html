@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/boxpsycho-by.svg" type="image/x-icon">
+    <title> Boxpsycho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> 
+        <img src="./assets/boxpsycho-logo.svg" alt="logo" id="logo">
+        <ul>
+            <a href="#problema">Problema & Solução</a>
+            <a href="#texto-boxpsycho">Demonstração da Solução</a>
+            <a href="#video-arduino">Contato</a>
+            <a href="#autores">Autores</a>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="disciplinas">
+                <h1>Abertura de impacto</h1>
+                <iframe class="video" width="760" height="515" src="https://www.youtube.com/embed/V1doqEqW1uU?si=b_RUETEhOXgNNy-z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            
+
+        </section>
+        <section id="problema">
+            <div id="problema-esquerda">
+                <h1 class="titulo">O uso incorreto dos medicamentos</h1>
+                <p>No Brasil, 50% das pessoas fazem uso inadequado de medicamentos, especialmente os controlados, devido a esquecimentos, confusões e resistência ao tratamento, destacando a preocupação com a saúde pública.</p>
+                <a id="esconder-mostrar">Entendimento do problema</a>
+                <div class="fake">
+                    <p> problema escolhido foi o uso incorreto de medicamentos controlados, algo muito comum na realidade do Brasil e do mundo. A estimativa da Organização Mundial da Saúde (OMS) é que cerca de 50% dos usuários de medicamentos fazem uso de forma incorreta, o que gera riscos à saúde. 
+                    Isso é ainda mais agravado com os medicamentos de uso controlado, uma vez que seu uso de maneira errônea, exagerada ou evitada também não é incomum e pode ser causado por diversas razões, como esquecimento, preocupação, instruções confusas, falta de compreensão, resistência ao tratamento, entre outras. 
+                    Os médicos têm dificuldade em monitorar com precisão se os pacientes estão tomando os fármacos da maneira correta. Isso pode levar a intoxicação, dependência, piora do quadro e, em casos ainda mais graves, à falência renal ou à morte por overdose.
+                    </p>
+                    <h2></h2>
+                    <img src="./assets/calculo.png" alt="">
+                </div>
+                <img src="./assets/prototipo.svg" alt="prototipo">
+                
+                
+
+            </div>
+
+            <div id="problema-direita">
+                <img src="./assets/esqueci.svg" alt="esqueci">
+                <h2 id="texto-boxpsycho">Boxpsycho</h2>
+                <p>A Boxpsycho organiza medicamentos, emitindo alertas para tomá-los. Registra horários de abertura dos compartimentos, permitindo monitoramento médico e autoverificação do paciente quanto ao consumo adequado diário.</p>
+            </div>
+                
+        </section>
+
+        <section id="videos">
+            <div id="arduino">
+                <h2>Arduino</h2>
+                <iframe id ="video-arduino" class="video" width="560" height="315" src="https://www.youtube.com/embed/6CkvKPpidmY?si=gGGxTONG7CFczyhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="python">
+                <h2>Python</h2>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/QJ0pS9f6Pm8?si=8OBgl8XEo9IZ2gU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contato">
+                <div id="header-form">
+                    <h2>Contato</h2>
+                </div>
+                <form id="form" class="form">
+                    <div class="form-content" >
+                        <label for="username" class="label-title">Nome</label>
+                        <input 
+                        type="text" 
+                        id="username"
+                        placeholder="Digite seu nome"
+                        />
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="form-content" >  
+                        <label for="email" class="label-title">E-mail</label>
+                        <input 
+                        type="text" 
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        />
+                        <a>Mensagem de erro</a>
+                    </div>    
+                    <div class="form-content" id="duvidas">
+                        <label for="text-box" class="label-title"></label>
+                        <textarea 
+                        id="mensagem" 
+                        name="mensagem"
+                        placeholder="Feedbacks, comentários, dúvidas, dicas..."></textarea>
+                        <a>Mensagem de erro</a>
+                    </div>  
+
+                        <button type="submit" id="botao">Enviar</button>  
+                </form>
+        </section>
+        
+        <section id="autores">
+            <div class="container">
+
+                <table>
+                    <tr id="title">
+                        <th colspan="2">Autores</th>
+                        <th>Nomes</th>
+                        <th colspan="2">RM</th>
+                        <th>Github</th>
+                    </tr>
+        
+                    <tr class="item">
+                        
+                        <td class="icone">
+                            <img src="./assets/booz.png" width="100" height="100">
+                        </td>
+                        <td></td>
+                        <td>Jorge Henrique Freire Booz</td>
+                        <td>552700</td>
+                        <td></td>
+                        <td>
+                            <button class="button">
+                                <a id="jorge-btn">Github</a> 
+                            </button>
+                        </td>
+                    </tr>
+        
+                    <tr class="item">
+                        <td class="icone">
+                            <img src="./assets/tibao.png" width="100" height="100">
+                        </td>
+                        <td></td>
+                        <td>Mateus Tibão Veloso</td>
+                        <td>553267</td>
+                        <td></td>
+                        <td>
+                        
+                            <button class="button">
+                               <a id="mateus-btn">Github</a> 
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+        
+        
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="images">
+            <img src="./assets/logo fiap.png" alt="fiap">
+            <img src="./assets/hapvida.png" alt="hapvida">
+        </div>
+
+        <div class="links">
+            <a id="fiap">FIAP</a>
+            <a href="#">Github projeto</a>
+        </div>
+        <div class="links">
+            <a id="jorge">Jorge</a>
+            <a id="mateus">Mateus</a>
+        </div>
+        <div class="links">
+            <a id="hapvida">Hapvida</a>
+            <a id="notredame">Notredame Intermédica</a>
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
